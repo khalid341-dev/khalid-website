@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Khalid Dev | Full Stack Web Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+  perspective:1000px;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  background:rgba(0,0,0,0.3);
+  backdrop-filter:blur(10px);
+}
+
+nav h1{
+  color:#00eaff;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-box{
+  background:rgba(255,255,255,0.1);
+  padding:60px;
+  border-radius:20px;
+  text-align:center;
+  transform:rotateY(-8deg);
+  box-shadow:0 30px 60px rgba(0,0,0,0.6);
+}
+
+.hero-box h2{
+  font-size:40px;
+  color:#00eaff;
+}
+
+.hero-box p{
+  margin:20px 0;
+  font-size:18px;
+}
+
+.hero-box button{
+  padding:12px 30px;
+  border:none;
+  background:#00eaff;
+  color:#000;
+  font-size:16px;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+  padding:80px 10%;
+}
+
+.card{
+  background:rgba(255,255,255,0.1);
+  padding:40px;
+  border-radius:20px;
+  transform:rotateX(8deg);
+  box-shadow:0 25px 50px rgba(0,0,0,0.5);
+}
+
+/* SKILLS */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.skill{
+  background:#00eaff;
+  color:#000;
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  font-weight:bold;
+  transform:translateZ(30px);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#000;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Khalid Dev</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-box">
+    <h2>Full Stack Web Developer</h2>
+    <p>Modern | Secure | Scalable Web Solutions</p>
+    <button>Hire Me</button>
+  </div>
+</div>
+
+<section id="about">
+  <div class="card">
+    <h2>About Company</h2>
+    <p>
+      Khalid Dev is a professional web development brand delivering
+      modern full stack web solutions using latest technologies.
+      We build fast, responsive and secure applications for businesses.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 style="margin-bottom:30px;">Our Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">SQL / MongoDB</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact Us</h2>
+    <p>Email: khalid.dev@email.com</p>
+    <p>GitHub: khalid341-dev</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Khalid Dev | Full Stack Web Developer
+</footer>
+
+</body>
+</html>
